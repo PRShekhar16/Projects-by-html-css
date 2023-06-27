@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loginpage</title>
+    <style>
+        body{
+            background: linear-gradient(
+                rgba(0,0,0,0.1), 
+                rgba(0,0,0,0.1)
+            ), url(/Index.html/Nightscape.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+        div{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+        .log{
+            display: inline-block;
+            display: flex;
+            width: 20vw;
+            height: auto;
+            padding: 0.3rem;
+            margin: 0.9rem auto;
+            border-radius: 0.6rem;
+            outline: none;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #login{
+            width: 6rem;
+            background: transparent;
+            color: aliceblue;
+            border: white solid 0.1rem;
+        }
+        #login:hover{
+            width: 4rem;
+            background-color: teal;
+            color: white;
+            transition: all 0.2s;
+            transition-timing-function: ease-in;
+            cursor: pointer;
+        }
+        h3{
+            color: aliceblue;
+            letter-spacing: 0.2rem;
+            font-size: 1.5rem;
+            font-weight: normal;
+            text-align: center;
+            position: absolute;
+            bottom: 3%;
+            right: 25%;
+            left: 25%;
+            font-family: sans-serif;
+        }
+        p{
+            color: palegreen;
+            font-style: italic;
+            font-family: unset;
+            letter-spacing: 0.02rem;
+            word-spacing: 0.02rem;
+            font-size: 0.91rem;
+            font-weight: lighter;
+        }
+        button{
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            background: transparent;
+            color: white;
+            font-size: 1rem;
+            padding: 0.3rem;
+            outline: wheat solid;
+            border-radius: 50%;
+        }
+        .Help{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        #user{
+            color: aliceblue;
+            text-align: center;
+            margin: 10rem auto;
+        }
+        .signup{
+            position: absolute;
+            top: 5%;
+            right: 4%;
+            color: whitesmoke;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .signup:hover{
+            text-decoration: underline white solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <form action="">
+            <input type="text" id="email or phone" placeholder="Email or Mobile" class="log">
+            <input type="password" id="password" placeholder="Password" class="log">
+            <input type="button" value="Log in" class="log" id="login" onclick="fn1()">
+        </form>
+    </div>
+    <h1 id="user">User login</h1>
+    <h3>Shekhar Software Solutions<p>for every problem has solution here!</p></h3>
+    <button> <a href="#" class="Help">Help</a>
+    </button>
+    <a href="http://127.0.0.1:5500/Index.html/Css/Projects/signupage.html" class="signup" id="signup">sign up</a>
+</body>
+</html>
+<script>
+    function fn1(){
+    alert("Sucessfully Logged In");
+    }
+    fn1();
+</script>
